@@ -103,7 +103,6 @@ footer {
     .Button:hover {
       border: 0.1rem #808080 solid;
     }
-    
   }
 }
 
@@ -144,16 +143,18 @@ footer {
         }
       }
     }
-    .total{
+    .total {
       display: flex;
       justify-content: space-between;
       width: 100%;
       align-items: center;
     }
-    .total >div{
+    .total > div {
       font-size: 2rem;
     }
-    .total >div,.total >button{//direct div
+    .total > div,
+    .total > button {
+      //direct div
       flex: 1;
     }
   }
@@ -161,7 +162,6 @@ footer {
     border-bottom: 0.1rem #c0c0c0 solid;
   }
 }
-
 
 .Button {
   padding: 1rem;
@@ -171,4 +171,21 @@ footer {
 }
 .primary {
   background-color: #f0c040;
+}
+form {
+  width: 100%;
+  .form-container {
+    padding: 0%;
+    list-style-type: none;
+    width: 100%;
+    li {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
+}
+input{
+  padding: 1rem;
+  border : .1rem #c0c0c0 solid;
 }
