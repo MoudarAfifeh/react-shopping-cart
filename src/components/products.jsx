@@ -12,6 +12,7 @@ export default class Products extends Component {
         }
     }
     openModal = (product) => {
+        
         this.setState({
             product
         })
