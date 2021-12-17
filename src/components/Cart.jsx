@@ -128,6 +128,4 @@ class Cart extends Component {
 }
 export default connect((state)=>({
     cartItems:state.cart.cartItems
-}),
-    removeFromCart
-)(Cart)
+}), { removeFromCart })(Cart)
