@@ -185,29 +185,53 @@ form {
     }
   }
 }
-input{
+input {
   padding: 1rem;
-  border : .1rem #c0c0c0 solid;
+  border: 0.1rem #c0c0c0 solid;
 }
 /*product detials*/
-.product-details{
+.product-details {
   display: flex;
-  flex-wrap: wrap;//for responsive
+  flex-wrap: wrap; //for responsive
   justify-content: space-between;
   max-height: 96vh;
-  img{
+  img {
     max-height: 100vh;
     max-width: 46rem;
     margin: 0 auto;
   }
-  .product-details-escription{
-    flex:1 1;
-    margin: .1rem;
+  .product-details-escription {
+    flex: 1 1;
+    margin: 0.1rem;
   }
 }
-.close-modal{
+.close-modal {
   position: absolute;
   right: 1rem;
   top: 2.5rem;
   z-index: 1000;
+}
+
+/*Order Details*/
+.order-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      padding: 10px;
+    }
+  }
+  .items {
+    text-align: right;
+    padding: 0;
+  }
+  .success-message {
+    color: green;
+  }
 }
